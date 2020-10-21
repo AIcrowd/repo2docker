@@ -44,7 +44,7 @@ __cmdclass = versioneer.get_cmdclass()
 __cmdclass["generate_dataverse_file"] = GenerateDataverseInstallationsFileCommand
 
 setup(
-    name='aicrowd-repo2docker',
+    name="aicrowd-repo2docker",
     version=versioneer.get_version(),
     install_requires=[
         "docker",
@@ -85,8 +85,6 @@ setup(
     include_package_data=True,
     cmdclass=__cmdclass,
     entry_points={
-        "console_scripts": [
-            "aicrowd-repo2docker = repo2docker.__main__:main",
-        ]
+        "console_scripts": ["aicrowd-repo2docker = repo2docker.__main__:main"]
     },
 )
