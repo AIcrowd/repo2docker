@@ -21,7 +21,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Set up locales properly
 RUN apt-get -qq update && \
-    apt-get -qq install --yes --no-install-recommends locales wget bzip2 > /dev/null && \
+    apt-get -qq install --yes --no-install-recommends git locales wget curl xz-utils bzip2 > /dev/null && \
     apt-get -qq purge && \
     apt-get -qq clean && \
     rm -rf /var/lib/apt/lists/*
