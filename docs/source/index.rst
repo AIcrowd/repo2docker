@@ -17,46 +17,23 @@ are pushed to a Docker registry.
 ``repo2docker`` is the tool used by `BinderHub <https://binderhub.readthedocs.io>`_
 to build images on demand.
 
-Please report `Bugs <https://github.com/jupyter/repo2docker/issues>`_,
+Please report `Bugs <https://github.com/jupyterhub/repo2docker/issues>`_,
 `ask questions <https://gitter.im/jupyterhub/binder>`_ or
-`contribute to the project <https://github.com/jupyter/repo2docker/blob/master/CONTRIBUTING.md>`_.
+`contribute to the project <https://github.com/jupyterhub/repo2docker/blob/master/CONTRIBUTING.md>`_.
 
 .. toctree::
    :maxdepth: 2
    :caption: Getting started with repo2docker
 
-   install
-   usage
-   faq
-
-.. toctree::
-   :maxdepth: 2
-   :caption: How-To guides
-
-   howto/user_interface
-   howto/languages
-   howto/export_environment
-   howto/lab_workspaces
-   howto/jupyterhub_images
-   howto/deploy
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Complete list of configuration files
-
-   config_files
-   specification
+   getting-started/index
+   howto/index
+   configuration/index
 
 .. toctree::
    :maxdepth: 2
    :caption: Contribute to repo2docker
 
-   contributing/contributing
-   contributing/roadmap
-   architecture
-   design
-   contributing/tasks
-   contributing/buildpack
+   contributing/index
 
 .. toctree::
    :maxdepth: 2
