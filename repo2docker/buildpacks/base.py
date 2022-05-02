@@ -19,6 +19,8 @@ FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
 # avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
 
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub || true
+
 # Set up locales properly
 RUN apt-get -qq update && \
     apt-get -qq install --yes --no-install-recommends git locales wget curl libcurl4-openssl-dev libssl-dev xz-utils bzip2 > /dev/null && \
